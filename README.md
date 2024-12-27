@@ -229,7 +229,7 @@ def draw_rect(x, y, width, height):
 
 def draw_obstacles():
     """ Draw obstacles within the game window """
-    glColor3f(0.6, 0.3, 1.0)  # Orange color for obstacles
+    glColor3f(0.6, 0.3, 1.0)  # purple color for obstacles
     for obstacle in obstacles:
         draw_rect(*obstacle['pos'], *obstacle['size'])
 
