@@ -92,7 +92,7 @@ def draw_magic_circles():
     # Filter out expired magic circles
     magic_circles = [(x, y, creation_time) for x, y, creation_time in magic_circles if
                      current_time - creation_time < circle_duration]
-    glColor3f(0.0, 0.0, 1.0)  # Blue color for magic circles
+    glColor3f(0.0, 0.0, 1.0)  
     for circle in magic_circles:
         x, y, _ = circle
         draw_circle(x, y, snake_size // 2)
@@ -229,7 +229,7 @@ def draw_rect(x, y, width, height):
 
 def draw_obstacles():
     """ Draw obstacles within the game window """
-    glColor3f(0.6, 0.3, 1.0)  # Orange color for obstacles
+    glColor3f(0.6, 0.3, 1.0)  
     for obstacle in obstacles:
         draw_rect(*obstacle['pos'], *obstacle['size'])
 
